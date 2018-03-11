@@ -16,6 +16,10 @@ require('datatables.net')(window, $)
 require('datatables.net-bs')(window, $)
 require('datatables.net-bs/css/dataTables.bootstrap.css')
 
+require('@/assets/css/plugins/pretty-checkbox/pretty-checkbox.min.css')
+import PrettyCheckbox from 'pretty-checkbox-vue';
+Vue.use(PrettyCheckbox);
+
 
 // 引入开发所需包
 import Vue from 'vue'

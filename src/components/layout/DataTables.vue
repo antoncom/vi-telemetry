@@ -1,16 +1,4 @@
 <template>
-<!--    <table id="myTable">
-        <tbody>
-        <tr v-for="user in users">
-            <td>{{ user.username }}</td>
-            <td>{{ user.name }}</td>
-            <td>{{ user.phone }}</td>
-            <td>{{ user.email }}</td>
-            <td>{{ user.website }}</td>
-            <td><button @click="buttonPressed">Press</button></td>
-        </tr>
-        </tbody>
-    </table>-->
         <table ref="data_table" class="table table-striped table-bordered table-hover dataTable"></table>
 </template>
 
