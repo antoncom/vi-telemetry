@@ -6,13 +6,8 @@
     <div id="page-wrapper" class="gray-bg">
         <page-top></page-top>
         <page-main>
-            <data-tables
-                slot="data-tables"
-                :api_uri="api_address"
-                :table_headers="headers"
-            >
-            </data-tables>
-            <!--<consumption-form slot="consumption-form"></consumption-form>-->
+            <data-table slot="data-table"></data-table>
+            <consumption-form slot="consumption-form"></consumption-form>
         </page-main>
         <page-footer></page-footer>
     </div>
@@ -21,18 +16,18 @@
 
 <script>
 import NprogressContainer from 'vue-nprogress/src/NprogressContainer'
-import { NavBar, PageTop, PageMain, DataTables, PageFooter } from '../layout'
+import { NavBar, PageTop, PageMain, DataTable, ConsumptionForm, PageFooter } from '../layout'
 
 export default {
     components: {
         NavBar,
         PageTop,
         PageMain,
-        DataTables,
+        DataTable,
+        ConsumptionForm,
         PageFooter,
         NprogressContainer
     },
-
     data() {
         return {
             search: 'weqeqweqe',

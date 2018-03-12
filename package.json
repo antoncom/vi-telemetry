@@ -35,19 +35,18 @@
   "dependencies": {
     "axios": "^0.15.3",
     "bootstrap": "3.3.7",
-    "datatables.net-bs": "^1.10.16",
-    "datatables.net-buttons-bs": "^1.5.1",
-    "datatables.net-responsive-bs": "^2.2.1",
     "jquery": "^3.3.1",
-    "jszip": "^3.1.5",
+    "lodash": "^4.17.5",
     "net": "^1.0.2",
-    "pdfmake": "^0.1.36",
     "tough-cookie": "^2.3.2",
+    "uiv": "^0.21.0",
     "vue": "^2.2.6",
     "vue-axios": "^2.0.1",
     "vue-datatables": "^0.1.4",
+    "vue-lodash": "^1.0.4",
     "vue-nprogress": "^0.1.5",
     "vue-router": "^2.3.1",
+    "vue2-datatable-component": "^2.2.2",
     "vuex": "^2.2.1",
     "vuex-router-sync": "^4.1.2"
   }

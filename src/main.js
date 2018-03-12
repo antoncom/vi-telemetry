@@ -12,14 +12,9 @@ require('@/assets/js/plugins/pace/pace.min.js')
 import $ from 'jquery'
 import 'bootstrap'
 
-require('datatables.net')(window, $)
-require('datatables.net-bs')(window, $)
-require('datatables.net-bs/css/dataTables.bootstrap.css')
-
 require('@/assets/css/plugins/pretty-checkbox/pretty-checkbox.min.css')
 import PrettyCheckbox from 'pretty-checkbox-vue';
 Vue.use(PrettyCheckbox);
-
 
 // 引入开发所需包
 import Vue from 'vue'
@@ -32,6 +27,17 @@ import NProgress from 'vue-nprogress'
 import store from './store'
 import * as filters from './filters'
 import * as types from './store/mutation-types'
+
+import Datatable from 'vue2-datatable-component'
+Vue.use(Datatable)
+
+import lodash from 'lodash'
+import VueLodash from 'vue-lodash'
+Vue.use(VueLodash, lodash)
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import * as uiv from 'uiv'
+Vue.use(uiv)
 
 // tough-cookie需要net依赖
 import tough from 'tough-cookie'
@@ -172,6 +178,5 @@ const vm = new Vue({
     router,
     store,
     nprogress,
-    // ...App
     render: h => h(App)
 }).$mount('#app')

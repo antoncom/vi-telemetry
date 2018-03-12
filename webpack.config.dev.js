@@ -47,8 +47,17 @@ module.exports = {
             }
         }, {
             test: /\.js$/,
+            loader: 'babel-loader?cacheDirectory',
             exclude: /node_modules/,
-            loader: 'babel-loader'
+            include: [
+                path.join(__dirname, 'src'),
+                /vue2-datatable-component/
+            ]
+        //}, {
+        //}, {
+        //    test: /\.js$/,
+        //    exclude: /node_modules/,
+        //    loader: 'babel-loader'
         }, { // Load jQuery plugin and inject the jquery object
             test: '/src/assets/js/**/*.js$',
             loader: 'imports-loader?jQuery=jquery,$=jquery,this=>window'

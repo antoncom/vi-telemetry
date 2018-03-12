@@ -6,6 +6,7 @@
     <div id="page-wrapper" class="gray-bg">
         <page-top></page-top>
         <page-main></page-main>
+
         <page-footer></page-footer>
     </div>
 </div>
