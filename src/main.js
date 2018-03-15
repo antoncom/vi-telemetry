@@ -36,8 +36,13 @@ import VueLodash from 'vue-lodash'
 Vue.use(VueLodash, lodash)
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+
 import * as uiv from 'uiv'
 Vue.use(uiv)
+
+
+
+
 
 // tough-cookie需要net依赖
 import tough from 'tough-cookie'

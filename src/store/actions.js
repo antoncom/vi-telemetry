@@ -21,9 +21,7 @@ export const login = ({ commit, state }, payload) => {
         }
 
         payload.error = ''
-
         commit(types.LOGIN, response)
-
         router.push({ name: 'home' })
 
     }).catch(error => {
